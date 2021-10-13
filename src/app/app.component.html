@@ -1,0 +1,16 @@
+<app-numbers (valueSend) ="inputNumber1($event)"
+             (valueSend2) ="inputNumber2($event)">
+</app-numbers>
+
+<app-operation  (operation) ="addOper($event)"
+                (operation) ="subtractOper($event)"
+                (operation) ="multiplyOper($event)"
+                (operation) ="divideOper($event)">
+</app-operation>
+
+
+<app-result 
+[inputNum1]="inputNum1"
+[inputNum2]="inputNum2"
+[operatorChoice]="operationChoice">
+</app-result>
